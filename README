@@ -1,0 +1,41 @@
+#Game of Life in Python
+
+This is a Python implementation of Conway's Game of Life, a classic cellular automaton simulation.
+
+##Description
+
+The Game of Life is a zero-player game that simulates the evolution of an initial population of living cells on a two-dimensional grid, based on a set of rules:
+
+1. Any live cell with fewer than two live neighbors dies, as if caused by under-population.
+2. Any live cell with two or three live neighbors lives on to the next generation.
+3. Any live cell with more than three live neighbors dies, as if by overcrowding.
+4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+
+These rules, which interact to create surprising patterns, were conceived by John Conway and popularized in Martin Gardner's "Mathematical Games" column in Scientific American in 1970.
+
+##Requirements
+
+- Python 3.x
+
+##Usage
+
+1. Clone the repository or download the source code.
+2. Navigate to the project directory.
+3. Run the `main.py` file:
+4. You will be prompted to enter 'manual' to manually input an initial pattern or 'file' to load an initial pattern from a file.
+   - If you choose 'manual', you'll be asked to enter the height and width of the pattern, followed by rows of 0s and 1s representing dead and live cells, respectively.
+   - If you choose 'file', you'll be prompted to enter the pattern number from the `patterns.txt` file.
+
+The simulation will then start, updating the grid with each generation, and displaying the updated state on the console.
+
+##Customization
+
+You can customize the simulation by modifying the following parameters in the `main.py` file:
+
+- `GRID_WIDTH` and `GRID_HEIGHT`: Dimensions of the game grid.
+
+You can also add or modify patterns in the `patterns.txt` file. Each pattern should be separated by an empty line, and live cells should be represented by '#' characters, while dead cells should be represented by any other character.
+
+##Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
